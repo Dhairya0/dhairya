@@ -746,7 +746,7 @@
         /* Skills Grid */
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 2rem;
         }
 
@@ -830,7 +830,7 @@
         /* Projects Grid */
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 2.5rem;
         }
 
@@ -952,7 +952,7 @@
         /* Education Cards */
         .education-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 2.5rem;
         }
 
@@ -1031,7 +1031,7 @@
         /* Certifications */
         .certifications-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(4, 1fr);
             gap: 2rem;
             margin-top: 3rem;
         }
@@ -1079,7 +1079,7 @@
 
         .contact-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(4, 1fr);
             gap: 2rem;
             margin-top: 3rem;
         }
@@ -1300,6 +1300,14 @@
             .timeline-item .timeline-content:last-child::before {
                 left: -22px;
             }
+
+            .projects-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .skills-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
 
         @media (max-width: 768px) {
@@ -1336,8 +1344,23 @@
                 display: none;
             }
 
-            .projects-grid,
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
             .education-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .certifications-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .contact-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -1412,8 +1435,8 @@
                 <div class="hero-image-wrapper">
                     <div class="hero-image-bg"></div>
                     <div class="hero-image">
-       <img src="https://media.licdn.com/dms/image/v2/D5635AQGdu1HMpW3h3g/profile-framedphoto-shrink_200_200/B56ZlO2oM3G4AY-/0/1757964567684?e=1761948000&v=beta&t=PW-Gj1elo1xYd2yS4mLSM1PPm5kemkufoeWJYs_gr74" alt="Dhairya Gajjar">
-   </div>
+                        <img src="https://media.licdn.com/dms/image/v2/D5635AQGdu1HMpW3h3g/profile-framedphoto-shrink_200_200/B56ZlO2oM3G4AY-/0/1757964567684?e=1761948000&v=beta&t=PW-Gj1elo1xYd2yS4mLSM1PPm5kemkufoeWJYs_gr74" alt="Dhairya Gajjar - Software Engineer">
+                    </div>
                     <div class="floating-badge badge-1">
                         <i class="fas fa-code"></i>
                         2+ Years Exp
@@ -1482,7 +1505,7 @@
                 <span class="section-badge">Experience</span>
                 <h2 class="section-title">Professional Journey</h2>
                 <p class="section-subtitle">
-                    Building scalable solutions and driving innovation across multiple industries
+                    Transforming ideas into scalable solutions across diverse industries and technologies
                 </p>
             </div>
 
@@ -1491,21 +1514,26 @@
                     <div class="timeline-content">
                         <div class="timeline-date">
                             <i class="far fa-calendar"></i>
-                            July 2025 – Present
+                            July 2025 – Present (4 months)
                         </div>
                     </div>
                     <div class="timeline-dot">
-                        <i class="fas fa-briefcase"></i>
+                        <i class="fas fa-rocket"></i>
                     </div>
                     <div class="timeline-content">
                         <div class="timeline-title">Backend Developer</div>
-                        <div class="timeline-company">WUD (Remote)</div>
+                        <div class="timeline-company">WUD · Remote</div>
                         <div class="timeline-description">
+                            <p style="margin-bottom: 1rem; font-style: italic; color: var(--text-secondary);">
+                                Building robust backend services for real-time event platforms serving 1,200+ users
+                            </p>
                             <ul>
-                                <li>Implemented SDLC tasks in Java and Python for real-time event platform backend handling 1,000+ daily transactions</li>
-                                <li>Reduced processing time by 15% through unit testing and agile code reviews</li>
-                                <li>Enhanced system reliability by 18% using Docker and Jenkins CI/CD</li>
-                                <li>Optimized PostgreSQL performance achieving 20% faster query execution</li>
+                                <li>Architected Java and Python microservices handling 1,000+ daily transactions with 99.9% uptime</li>
+                                <li>Optimized PostgreSQL queries achieving 20% faster execution through strategic indexing</li>
+                                <li>Reduced system processing time by 15% through comprehensive unit testing and code reviews</li>
+                                <li>Migrated infrastructure to AWS RDS, cutting downtime by 15% with automated backups</li>
+                                <li>Enhanced reliability by 18% using Docker containerization and Jenkins CI/CD pipelines</li>
+                                <li>Collaborated with cross-functional teams ensuring compliant, efficient payment-like data flows</li>
                             </ul>
                         </div>
                     </div>
@@ -1515,7 +1543,7 @@
                     <div class="timeline-content">
                         <div class="timeline-date">
                             <i class="far fa-calendar"></i>
-                            May 2024 – May 2025
+                            May 2024 – May 2025 (1 year)
                         </div>
                     </div>
                     <div class="timeline-dot">
@@ -1523,13 +1551,19 @@
                     </div>
                     <div class="timeline-content">
                         <div class="timeline-title">Graduate Student Research Assistant</div>
-                        <div class="timeline-company">Arizona State University</div>
+                        <div class="timeline-company">TOMNET · Arizona State University</div>
                         <div class="timeline-description">
+                            <p style="margin-bottom: 1rem; font-style: italic; color: var(--text-secondary);">
+                                Driving innovation in transportation data analytics and intelligent systems research
+                            </p>
                             <ul>
-                                <li>Developed Java/Python pipelines processing 3,000+ transportation records</li>
-                                <li>Boosted efficiency by 15% through agile oversight and unit testing</li>
-                                <li>Automated secure data processing, cutting analysis time by 20%</li>
-                                <li>Collaborated with cross-functional teams on high-quality prototypes</li>
+                                <li>Developed Java/Python data pipelines processing 3,500+ transportation records on AWS S3</li>
+                                <li>Boosted data processing efficiency by 15% through agile methodologies and automated testing</li>
+                                <li>Created JavaScript visualization tools automating secure data processing workflows</li>
+                                <li>Reduced analysis time by 20% using object-oriented design principles</li>
+                                <li>Resolved 12 critical performance bottlenecks improving throughput by 12%</li>
+                                <li>Automated deployment with Jenkins reducing release cycles by 10%</li>
+                                <li>Delivered high-quality research prototypes in fast-paced academic environment</li>
                             </ul>
                         </div>
                     </div>
@@ -1539,7 +1573,7 @@
                     <div class="timeline-content">
                         <div class="timeline-date">
                             <i class="far fa-calendar"></i>
-                            Jan 2023 – May 2023
+                            Jan 2023 – May 2023 (5 months)
                         </div>
                     </div>
                     <div class="timeline-dot">
@@ -1547,13 +1581,100 @@
                     </div>
                     <div class="timeline-content">
                         <div class="timeline-title">Machine Learning Intern</div>
-                        <div class="timeline-company">BISAG-N, India</div>
+                        <div class="timeline-company">BISAG-N · Government of Gujarat, India</div>
                         <div class="timeline-description">
+                            <p style="margin-bottom: 1rem; font-style: italic; color: var(--text-secondary);">
+                                Building scalable geospatial analysis systems for satellite data processing
+                            </p>
                             <ul>
-                                <li>Built Java application on AWS Lambda processing 3,000+ geospatial records</li>
-                                <li>Enhanced processing speed by 15% with efficient data structures</li>
-                                <li>Optimized data pipelines using C++ and AWS SQS, reducing latency by 12%</li>
-                                <li>Configured Jenkins improving system reliability by 10%</li>
+                                <li>Engineered Java application on AWS Lambda processing 3,000+ geospatial records</li>
+                                <li>Enhanced processing speed by 15% using efficient data structures and algorithms</li>
+                                <li>Optimized C++ data pipelines with AWS SQS reducing latency by 12%</li>
+                                <li>Implemented streamlined task queuing and comprehensive error handling</li>
+                                <li>Configured Jenkins automation improving system reliability by 10%</li>
+                                <li>Participated in technical decision-making for governmental incident management tools</li>
+                                <li>Ensured scalable, compliant solutions for cross-border resource management systems</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <div class="timeline-date">
+                            <i class="far fa-calendar"></i>
+                            May 2022 – Nov 2022 (7 months)
+                        </div>
+                    </div>
+                    <div class="timeline-dot">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">Software Development Engineer Intern</div>
+                        <div class="timeline-company">M Square Technologies · Surat, India</div>
+                        <div class="timeline-description">
+                            <p style="margin-bottom: 1rem; font-style: italic; color: var(--text-secondary);">
+                                Contributing to enterprise software solutions and client projects
+                            </p>
+                            <ul>
+                                <li>Developed full-stack features for enterprise applications using modern frameworks</li>
+                                <li>Collaborated with senior developers on client deliverables and code reviews</li>
+                                <li>Implemented agile methodologies and version control best practices</li>
+                                <li>Contributed to scalable architecture design and technical documentation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <div class="timeline-date">
+                            <i class="far fa-calendar"></i>
+                            Aug 2021 – Nov 2021 (4 months)
+                        </div>
+                    </div>
+                    <div class="timeline-dot">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">Software Development Engineer Intern</div>
+                        <div class="timeline-company">CROWN Software · Ahmedabad, India</div>
+                        <div class="timeline-description">
+                            <p style="margin-bottom: 1rem; font-style: italic; color: var(--text-secondary);">
+                                Building foundational software engineering skills
+                            </p>
+                            <ul>
+                                <li>Gained hands-on experience with software development lifecycle</li>
+                                <li>Worked on multiple client projects using various technology stacks</li>
+                                <li>Learned industry best practices for code quality and testing</li>
+                                <li>Participated in team collaboration and agile ceremonies</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <div class="timeline-date">
+                            <i class="far fa-calendar"></i>
+                            May 2021 – Jul 2021 (3 months)
+                        </div>
+                    </div>
+                    <div class="timeline-dot">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">Software Developer Intern</div>
+                        <div class="timeline-company">HorizonTechlabs · New Jersey, United States</div>
+                        <div class="timeline-description">
+                            <p style="margin-bottom: 1rem; font-style: italic; color: var(--text-secondary);">
+                                First international software development experience
+                            </p>
+                            <ul>
+                                <li>Developed web applications using modern JavaScript frameworks</li>
+                                <li>Worked remotely with distributed team across different time zones</li>
+                                <li>Implemented responsive UI components and REST API integrations</li>
+                                <li>Gained exposure to US software development standards and practices</li>
                             </ul>
                         </div>
                     </div>
@@ -1786,6 +1907,56 @@
                             <li>15% transaction processing improvement</li>
                             <li>Serverless architecture</li>
                             <li>Peer-reviewed solutions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Geospatial Data Pipeline</h3>
+                            <div class="project-tech">
+                                <span class="tech-badge">Java</span>
+                                <span class="tech-badge">AWS Lambda</span>
+                                <span class="tech-badge">C++</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Built enterprise-grade geospatial processing system for satellite data analysis at BISAG-N.
+                        </p>
+                        <ul class="project-highlights">
+                            <li>Processed 3,000+ geospatial records</li>
+                            <li>15% faster processing with efficient data structures</li>
+                            <li>Integrated AWS SQS for task queuing</li>
+                            <li>Reduced latency by 12%</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Transportation Analytics Platform</h3>
+                            <div class="project-tech">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">JavaScript</span>
+                                <span class="tech-badge">REST APIs</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Developed comprehensive data analytics platform for transportation research at ASU TOMNET.
+                        </p>
+                        <ul class="project-highlights">
+                            <li>Processed 3,500+ transportation records</li>
+                            <li>Automated data collection on AWS S3</li>
+                            <li>20% reduction in analysis time</li>
+                            <li>JavaScript visualization tools</li>
                         </ul>
                     </div>
                 </div>
