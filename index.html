@@ -1086,12 +1086,17 @@
 
         .contact-card {
             background: var(--bg-card);
-            padding: 2.5rem;
+            padding: 2.5rem 1.5rem;
             border-radius: 20px;
             box-shadow: 0 10px 30px var(--shadow);
             transition: all 0.3s ease;
             border: 2px solid transparent;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 200px;
         }
 
         .contact-card:hover {
@@ -1111,6 +1116,7 @@
             justify-content: center;
             font-size: 1.8rem;
             color: white;
+            flex-shrink: 0;
         }
 
         .contact-label {
@@ -1122,6 +1128,9 @@
 
         .contact-value {
             color: var(--text-secondary);
+            word-break: break-word;
+            font-size: 0.95rem;
+            line-height: 1.6;
         }
 
         .contact-value a {
@@ -1435,7 +1444,7 @@
                 <div class="hero-image-wrapper">
                     <div class="hero-image-bg"></div>
                     <div class="hero-image">
-                        <img src="https://imgur.com/a/KlKrrxK">
+                        <img src="https://i.imgur.com/KlKrrxK.jpg" alt="Dhairya Gajjar - Software Engineer">
                     </div>
                     <div class="floating-badge badge-1">
                         <i class="fas fa-code"></i>
@@ -2065,7 +2074,7 @@
                         </div>
                         <div class="contact-label">LinkedIn</div>
                         <div class="contact-value">
-                            <a href="https://linkedin.com/in/dhairyamgajjar" target="_blank">dhairyamgajjar</a>
+                            <a href="https://linkedin.com/in/dhairyamgajjar" target="_blank">@dhairyamgajjar</a>
                         </div>
                     </div>
 
@@ -2074,7 +2083,7 @@
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div class="contact-label">Location</div>
-                        <div class="contact-value">Tempe, AZ<br><small>(Willing to relocate)</small></div>
+                        <div class="contact-value">Tempe, Arizona<br>(Willing to relocate)</div>
                     </div>
                 </div>
             </div>
